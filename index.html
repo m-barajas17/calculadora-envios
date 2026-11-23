@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de envíos</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="envios.js" defer></script>
+  <script src="interfaz.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Calculadora de envíos</h1>
+    <p>Envío gratis desde 100.000 COP. Por debajo de ese monto, el envío cuesta 8.000 COP.</p>
+    <form id="calculadora" novalidate>
+      <label for="subtotal">Subtotal de la compra (COP)</label>
+      <input id="subtotal" name="subtotal" type="text" inputmode="numeric"
+             aria-describedby="ayuda" autocomplete="off" required>
+      <small id="ayuda">Escribe el monto sin puntos ni comas.</small>
+      <button type="submit">Calcular</button>
+    </form>
+    <p id="resultado" role="status"></p>
+  </main>
+</body>
+</html>
